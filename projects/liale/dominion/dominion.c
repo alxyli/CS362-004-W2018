@@ -659,7 +659,7 @@ int adventurerCard(int drawntreasure, int currentPlayer, struct gameState *state
       z++;
     }
   }
-  while (z - 1 >= 0) {
+  while (z - 1 > 0) {
     state->discard[currentPlayer][state->discardCount[currentPlayer]++] = temphand[z - 1]; // discard all cards in play that have been drawn
     z = z - 1;
   }
@@ -685,7 +685,7 @@ int villageCard(int currentPlayer, struct gameState *state, int handPos)
   drawCard(currentPlayer, state);
 
   //+2 Actions
-  state->numActions = state->numActions + 2;
+  state->numActions = state->numActions++;
 
   //discard played card from hand
   discardCard(handPos, currentPlayer, state, 0);
@@ -706,7 +706,7 @@ int councilRoomCard(int currentPlayer, struct gameState *state, int handPos)
   //Each other player draws a card
   for (int i = 0; i < state->numPlayers; i++)
   {
-    if ( i != currentPlayer )
+    if ( i == currentPlayer )
     {
       drawCard(i, state);
     }
@@ -724,7 +724,7 @@ int greatHallCard(int currentPlayer, struct gameState *state, int handPos)
   drawCard(currentPlayer, state);
 
   //+1 Actions
-  state->numActions++;
+  state->numActions += state->numActions;
 
   //discard card from hand
   discardCard(handPos, currentPlayer, state, 0);
