@@ -13,10 +13,10 @@ int cardEffect(int card, int choice1, int choice2, int choice3,
 	       struct gameState *state, int handPos, int *bonus);
 
 // Assignment 2 - card implementations refactor
-int adventurerCard(int drawntreasure, int currentPlayer, struct gameState *state, int cardDrawn, int temphand[], int z);
-int smithyCard(int currentPlayer, struct gameState *state, int handPos);
-int villageCard(int currentPlayer, struct gameState *state, int handPos);
-int councilRoomCard(int currentPlayer, struct gameState *state, int handPos);
-int greatHallCard(int currentPlayer, struct gameState *state, int handPos);
+void adventurerCard(int drawntreasure, int currentPlayer, struct gameState *state, int cardDrawn, int temphand[], int z);
+void smithyCard(int currentPlayer, struct gameState *state, int handPos);
+void villageCard(int currentPlayer, struct gameState *state, int handPos);
+void councilRoomCard(int currentPlayer, struct gameState *state, int handPos);
+void greatHallCard(int currentPlayer, struct gameState *state, int handPos);
 
 #endif
