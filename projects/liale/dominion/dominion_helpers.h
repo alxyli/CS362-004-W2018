@@ -12,4 +12,11 @@ int getCost(int cardNumber);
 int cardEffect(int card, int choice1, int choice2, int choice3, 
 	       struct gameState *state, int handPos, int *bonus);
 
+// Assignment 2 - card implementations refactor
+void adventurerCard(int drawntreasure, int currentPlayer, struct gameState *state, int cardDrawn, int temphand[], int z);
+void smithyCard(int currentPlayer, struct gameState *state, int handPos);
+void villageCard(int currentPlayer, struct gameState *state, int handPos);
+void councilRoomCard(int currentPlayer, struct gameState *state, int handPos);
+void greatHallCard(int currentPlayer, struct gameState *state, int handPos);
+
 #endif
