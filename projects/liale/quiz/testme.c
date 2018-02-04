@@ -22,7 +22,8 @@ char *inputString()
     buffer = malloc(5 * sizeof(char));
 
     // fill spots 0-4 in string with only the letters from inputChar() function
-    for (int i = 0; i < 5; i++) {
+    int i;
+    for (i = 0; i < 5; i++) {
       char letter = inputChar();
       while (letter < 97 || letter > 116)
         letter = inputChar();
