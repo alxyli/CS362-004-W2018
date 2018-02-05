@@ -55,29 +55,45 @@ runtests: testDrawCard
 
 runUnitTests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
 	./unittest1 &> unittestresult.out
+	echo >> unittestresult.out
 	./unittest2 >> unittestresult.out
+	echo >> unittestresult.out
 	./unittest3 >> unittestresult.out
+	echo >> unittestresult.out
 	./unittest4 >> unittestresult.out
+	echo >> unittestresult.out
 	./cardtest1 >> unittestresult.out
+	echo >> unittestresult.out
 	./cardtest2 >> unittestresult.out
+	echo >> unittestresult.out
 	./cardtest3 >> unittestresult.out
+	echo >> unittestresult.out
 	./cardtest4 >> unittestresult.out
+	echo >> unittestresult.out
 	echo "isGameOver stats" >> unittestresult.out
 	gcov -abcfu dominion.c | sed -n '/isGameOver/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
+	echo >> unittestresult.out
 	echo "updateCoins stats" >> unittestresult.out
 	gcov -abcfu dominion.c | sed -n '/updateCoins/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
+	echo >> unittestresult.out
 	echo "getCost stats" >> unittestresult.out
 	gcov -abcfu dominion.c | sed -n '/getCost/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
+	echo >> unittestresult.out
 	echo "whoseTurn stats" >> unittestresult.out
 	gcov -abcfu dominion.c | sed -n '/whoseTurn/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
+	echo >> unittestresult.out
 	echo "Adventurer stats" >> unittestresult.out
 	gcov -abcfu dominion.c | sed -n '/adventurerCard/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
+	echo >> unittestresult.out
 	echo "Smithy stats" >> unittestresult.out
 	gcov -abcfu dominion.c | sed -n '/smithyCard/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
+	echo >> unittestresult.out
 	echo "Village stats" >> unittestresult.out
 	gcov -abcfu dominion.c | sed -n '/villageCard/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
+	echo >> unittestresult.out
 	echo "Great Hall stats" >> unittestresult.out
 	gcov -abcfu dominion.c | sed -n '/greatHallCard/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
+	echo >> unittestresult.out
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
