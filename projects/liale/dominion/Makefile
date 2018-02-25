@@ -30,6 +30,15 @@ cardtest3: cardtest3.c dominion.o rngs.o
 cardtest4: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o $(CFLAGS)
 
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard1: randomtestcard1.c dominion.o rngs.o
+	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard2: randomtestcard2.c dominion.o rngs.o
+	gcc -o randomtestcard2 -g randomtestcard2.c dominion.o rngs.o $(CFLAGS)
+
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
 #To run playdom you need to entere: ./playdom <any integer number> like ./playdom 10*/
@@ -95,10 +104,42 @@ runUnitTests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardte
 	gcov -abcfu dominion.c | sed -n '/greatHallCard/{n;p; n;p; n;p; n;p;}' >> unittestresult.out
 	echo >> unittestresult.out
 
+runRandomTests: randomtestadventurer randomtestcard1 randomtestcard2
+	./randomtestadventurer &> randomtestadventurer.out
+	echo >> randomtestadventurer.out
+	echo "randomtestadventurer stats" >> randomtestadventurer.out
+	gcov -abcfu dominion.c | sed -n '/adventurerCard/{n;p; n;p; n;p; n;p;}' >> randomtestadventurer.out
+	./randomtestcard1 &> randomtestcard1.out
+	echo >> randomtestcard1.out
+	echo "randomtestcard1 stats" << randomtestcard1.out
+	gcov -abcfu dominion.c | sed -n '/smithyCard/{n;p; n;p; n;p; n;p;}' >> randomtestcard1.out
+	./randomtestcard2 &> randomtestcard2.out
+	echo >> randomtestcard2.out
+	echo "randomtestcard2 stats" << randomtestcard2.out
+	gcov -abcfu dominion.c | sed -n '/villageCard/{n;p; n;p; n;p; n;p;}' >> randomtestcard2.out
+
+runRandomTestAdventurer: randomtestadventurer
+	./randomtestadventurer &> randomtestadventurer.out
+	echo >> randomtestadventurer.out
+	echo "randomtestadventurer stats" >> randomtestadventurer.out
+	gcov -abcfu dominion.c | sed -n '/adventurerCard/{n;p; n;p; n;p; n;p;}' >> randomtestadventurer.out
+
+runRandomTestCard1: randomtestcard1
+	./randomtestcard1 &> randomtestcard1.out
+	echo >> randomtestcard1.out
+	echo "randomtestcard1 stats" << randomtestcard1.out
+	gcov -abcfu dominion.c | sed -n '/smithyCard/{n;p; n;p; n;p; n;p;}' >> randomtestcard1.out
+
+runRandomTestCard2: randomtestcard2
+	./randomtestcard2 &> randomtestcard2.out
+	echo >> randomtestcard2.out
+	echo "randomtestcard2 stats" << randomtestcard2.out
+	gcov -abcfu dominion.c | sed -n '/villageCard/{n;p; n;p; n;p; n;p;}' >> randomtestcard2.out
+
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out badTestDrawCard testDrawCard testDrawCard.exe testUpdateCoins unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out badTestDrawCard testDrawCard testDrawCard.exe testUpdateCoins unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 randomtestadventurer randomtestcard1 randomtestcard2
