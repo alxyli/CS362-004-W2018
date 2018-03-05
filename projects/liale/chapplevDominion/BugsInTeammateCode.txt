@@ -1,0 +1,65 @@
+TITLE: Bug 1 - Smithy draws one additional card than expected
+PRODUCT: Smithy card implementation in teammate's dominion.c code
+CLASSIFICATION: Serious bug
+PLATFORM: All platforms
+CAN IT BE REPRODUCED: Yes, every time the Smithy card is played, it exhibits this behavior
+DESCRIPTION: 
+	Summary: Smithy draws 4 cards instead of 3 when played
+
+	What happened: cardtest2.c, which is the unit test I wrote to test the Smithy card implementation, fails when run against my teammate's dominion.c code. cardtest2.c checks the handCount of the current player to test whether Smithy successfully drew 3 cards after it is played. The test fails because the handCount exceeds the expected handCount post Smithy by 1. 
+
+STEPS TO REPRODUCE: 
+		1) Get the number of cards in the current player's handCount before Smithy is played
+		2) Play Smithy card (either through cardEffect or calling the refactored Smithy function)
+		3) Get the number of cards in the current player's handCount after Smithy is played
+		4) Note that the current player's handCount is increased by 3 cards instead of 2 (since Smithy is discarded after play, the total number of cards after Smithy should be +2)
+
+EXPECTED RESULTS: The current player's handCount should hold an additional 2 cards after Smithy is played
+
+ACTUAL RESULTS: The current player's handCount is instead holding an additional 3 cards after Smithy is played, thus indicating that an additional card was incorrectly drawn
+
+ATTACHMENTS: See cardtest2.c and unittestresults.out files (generated from running 'make runUnitTests')
+
+TITLE: Bug 2 - Adventurer incorrectly draws more than 2 treasure cards
+PRODUCT: Adventurer card implemenation in teammate's dominion.c code
+CLASSIFICATION: Serious bug
+PLATFORM: All platforms
+CAN IT BE REPRODUCED: Yes, every time the Adventurer card is played, it exhibits this behavior
+DESCRIPTION:
+	Summary: Adventurer incorrectly draws more than 2 treasure cards to the current player's hand
+
+	What happened: randomtestadventurer.c, which is the unit test I wrote to randomly test the Adventurer card implementation, fails when run against my teammate's dominion.c code. randomtestadventurer.c randomly intializes gameState variables before playing the Adventurer card, and checks for three outcomes: Player 1 gains 2 cards, Player 1 gains two treasure cards, and that other players did not gain any cards. Tests 1 and 2 fail because Player 1 gains more than 2 total cards and more than 2 total treasure cards after Adventurer is played. See Bug 3 for the report on Test 1 failing.
+
+STEPS TO REPRODUCE:
+	1) Get the number of treasure cards in the current player's handCount before Adventurer is played
+	2) Play Adventurer card (either through cardEffect or calling the refactored Adventurer function)
+	3) Get the number of treasure cards in the current player's handCount after Adventurer is played
+	4) Note that the current player has gained much more than 2 treasure cards after having played Adventurer
+
+EXPECTED RESULTS: The current player's hand should contain 2 more treasure cards after Adventurer is played
+
+ACTUAL RESULTS: The current player's hand contains more than 2 treasure cards after Adventurer is played, thus indicating that a bug in Adventurer is incorrectly counting treasure cards added to the player's hand
+
+ATTACHMENTS: See randomtestadventurer.c and randomtestadventurer.out (generated from running 'make runRandomTests' -> makefile has been modified to only include Adventurer gcov stats)
+
+TITLE: Bug 3 - Adventurer incorrectly gains more than 2 total cards
+PRODUCT: Adventurer card implementation in teammate's dominion.c code
+CLASSIFICATION: Serious bug
+PLATFORM: All platforms
+CAN IT BE REPRODUCED: Yes, every time the Adventurer card is played, it exhibits this behavior
+DESCRIPTION:
+	Summary: Adventurer incorrectly gains more than 2 total cards (should be 2 treasure cards) after it is played. These cards are not discarded.
+
+	What happened: randomtestadventurer.c, which is the unit test I wrote to randomly test the Adventurer card implementation, fails when run against my teammate's dominion.c code. randomtestadventurer.c randomly intializes gameState variables before playing the Adventurer card, and checks for three outcomes: Player 1 gains 2 cards, Player 1 gains two treasure cards, and that other players did not gain any cards. Tests 1 and 2 fail because Player 1 gains more than 2 total cards and more than 2 total treasure cards after Adventurer is played. 
+
+STEPS TO REPRODUCE:
+	1) Get the current player's handCount before Adventurer is played
+	2) Play Adventurer card (either through cardEffect or calling the refactored Adventurer function)
+	3) Get the current player's handCount after Adventurer is played
+	4) Note that the current player has gained much more than 2 total cards that are not discarded
+
+EXPECTED RESULTS: The current player's hand should contain 2 more cards (both treasure cards) after Adventurer is played
+
+ACTUAL RESULTS: The current player's hand contains much more than 2 extra cards after Adventurer is played, thus indicating that a bug in Adventurer is incorrectly discarding cards that aren't treasure cards
+
+ATTACHMENTS: See randomtestadventurer.c and randomtestadventurer.out (generated from running 'make runRandomTests' -> makefile has been modified to only include Adventurer gcov stats)
