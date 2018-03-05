@@ -42,7 +42,7 @@ ACTUAL RESULTS: The current player's hand contains more than 2 treasure cards af
 
 ATTACHMENTS: See randomtestadventurer.c and randomtestadventurer.out (generated from running 'make runRandomTests' -> makefile has been modified to only include Adventurer gcov stats)
 
-TITLE: Bug 3 - Adventurer incorrectly gains more than 2 total cards
+TITLE: Bug 3 - Adventurer incorrectly adds more than 2 total cards to player's hand
 PRODUCT: Adventurer card implementation in teammate's dominion.c code
 CLASSIFICATION: Serious bug
 PLATFORM: All platforms
