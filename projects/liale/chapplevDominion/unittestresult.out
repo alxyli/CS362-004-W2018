@@ -1,0 +1,242 @@
+TESTING isGameOver()
+Beginning tests...
+---------------
+TEST 1: Empty Province card stack
+# Province cards: 0
+TEST 1 PASSED
+isGameOver() returned 1
+---------------
+TEST 2: Three empty supply piles
+# Province cards: 1 / # Adventuer cards: 0 / # Council Room cards: 0 / # Gardens cards: 0
+TEST 2 PASSED
+isGameOver() returned 1
+---------------
+TEST 3: Game still in progress
+Number of cards in supply pile 0: 1
+Number of cards in supply pile 1: 1
+Number of cards in supply pile 2: 1
+Number of cards in supply pile 3: 1
+Number of cards in supply pile 4: 1
+Number of cards in supply pile 5: 1
+Number of cards in supply pile 6: 1
+Number of cards in supply pile 7: 1
+Number of cards in supply pile 8: 1
+Number of cards in supply pile 9: 1
+Number of cards in supply pile 10: 1
+Number of cards in supply pile 11: 1
+Number of cards in supply pile 12: 1
+Number of cards in supply pile 13: 1
+Number of cards in supply pile 14: 1
+Number of cards in supply pile 15: 1
+Number of cards in supply pile 16: 1
+Number of cards in supply pile 17: 1
+Number of cards in supply pile 18: 1
+Number of cards in supply pile 19: 1
+Number of cards in supply pile 20: 1
+Number of cards in supply pile 21: 1
+Number of cards in supply pile 22: 1
+Number of cards in supply pile 23: 1
+Number of cards in supply pile 24: 1
+TEST 3 PASSED
+isGameOver() returned 0
+
+TESTING updateCoins()
+Beginning tests...
+---------------
+TEST 1: 5 Copper hand / no bonus
+G.coins value: 5 / Hand value (5 coppers, no bonus): 5
+TEST 1 PASSED
+---------------
+TEST 2: 5 Copper hand / +2 bonus
+G.coins value: 7 / Hand value (5 coppers, +2 bonus): 7
+TEST 2 PASSED
+---------------
+TEST 3: 5 Silver hand / no bonuses
+G.coins value: 10 / Hand value (5 silvers, no bonus): 10
+TEST 3 PASSED
+---------------
+TEST 4: 5 Silver hand / +2 bonus
+G.coins value: 12 / Hand value (5 silvers, +2 bonus): 12
+TEST 4 PASSED
+---------------
+TEST 5: 5 Gold hand / no bonus
+G.coins value: 15 / Hand value (5 golds, no bonus): 15
+TEST 5 PASSED
+---------------
+TEST 6: 5 Gold hand / +2 bonus
+G.coins value: 17 / Hand value (5 golds, no bonus): 17
+TEST 6 PASSED
+
+TESTING getCost()
+Beginning tests...
+---------------
+TEST 1: Curse
+TEST 1 PASSED
+---------------
+TEST 2: Estate
+TEST 2 PASSED
+---------------
+TEST 3: Duchy
+TEST 3 PASSED
+---------------
+TEST 4: Province
+TEST 4 PASSED
+---------------
+TEST 5: Copper
+TEST 5 PASSED
+---------------
+TEST 6: Silver
+TEST 6 PASSED
+---------------
+TEST 7: Gold
+TEST 7 PASSED
+---------------
+TEST 8: Adventurer
+TEST 8 PASSED
+---------------
+TEST 9: Council Room
+TEST 9 PASSED
+---------------
+TEST 10: Feast
+TEST 10 PASSED
+---------------
+TEST 11: Gardens
+TEST 11 PASSED
+---------------
+TEST 12: Mine
+TEST 12 PASSED
+---------------
+TEST 13: Remodel
+TEST 13 PASSED
+---------------
+TEST 14: Smithy
+TEST 14 PASSED
+---------------
+TEST 15: Village
+TEST 15 PASSED
+---------------
+TEST 16: Baron
+TEST 16 PASSED
+---------------
+TEST 17: Great Hall
+TEST 17 PASSED
+---------------
+TEST 18: Minion
+TEST 18 PASSED
+---------------
+TEST 19: Steward
+TEST 19 PASSED
+---------------
+TEST 20: Tribute
+TEST 20 PASSED
+---------------
+TEST 21: Ambassador
+TEST 21 PASSED
+---------------
+TEST 22: Cutpurse
+TEST 22 PASSED
+---------------
+TEST 23: Embargo
+TEST 23 PASSED
+---------------
+TEST 24: Outpost
+TEST 24 PASSED
+---------------
+TEST 25: Salvager
+TEST 25 PASSED
+---------------
+TEST 26: Sea Hag
+TEST 26 PASSED
+---------------
+TEST 27: Treasure Map
+TEST 27 PASSED
+---------------
+TEST 28: Non-existing card
+TEST 28 PASSED
+
+TESTING whoseTurn()
+Beginning tests...
+---------------
+TEST 1: Player 1's turn
+TEST 1 PASSED
+---------------
+TEST 2: Player 2's turn
+TEST 2 PASSED
+
+TESTING Adventurer card
+TEST: Player 1 gains two treasure cards
+treasure: 7 / original treasure: 5
+TEST PASSED
+
+TESTING Smithy card
+[before cardEffect] handCountTest 5
+[before cardEffect] handCountOG 5
+TEST: Player 1 gains three cards
+[after cardEffect] handCountTest 8
+[after cardEffect] handCountOG 5
+TEST FAILED
+
+TESTING Village card
+[before cardEffect] handCountTest 5
+[before cardEffect] handCountOG 5
+TEST 1: Player 1 gains 1 card
+[after cardEffect] handCountTest 5
+[after cardEffect] handCountOG 5
+TEST 1 PASSED
+---------------
+[after cardEffect] numActionsTest 3
+[after cardEffect] numActionsOG 1
+TEST 2: Player 1 gains 2 actions
+TEST 2 PASSED
+
+TESTING Great Hall card
+TEST 1: Player 1 gains 1 card
+[after cardEffect] handCountTest 5
+[after cardEffect] handCountOG 5
+TEST 1 PASSED
+---------------
+[after cardEffect] numActionsTest 2
+[after cardEffect] numActionsOG 1
+TEST 2: Player 1 gains 1 action
+TEST 2 PASSED
+
+isGameOver stats
+Lines executed:100.00% of 12
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+updateCoins stats
+Lines executed:100.00% of 14
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+
+getCost stats
+Lines executed:100.00% of 30
+Branches executed:100.00% of 28
+Taken at least once:100.00% of 28
+No calls
+
+whoseTurn stats
+Lines executed:100.00% of 1
+No branches
+No calls
+
+
+Adventurer stats
+Lines executed:100.00% of 19
+Branches executed:100.00% of 12
+Taken at least once:91.67% of 12
+No calls
+
+Smithy stats
+Lines executed:80.00% of 10
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+No calls
+
+Village stats
+
+Great Hall stats
+

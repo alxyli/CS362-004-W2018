@@ -1,0 +1,397 @@
+RANDOMLY TESTING Adventurer card
+---------------
+TEST 1 FAILED ON TEST #0
+testState handCount: 321 / originalState handCount: 300
+TEST 2 FAILED ON TEST #0
+treasure: 7 / original treasure: 2
+TEST 1 FAILED ON TEST #1
+testState handCount: 220 / originalState handCount: 212
+TEST 2 FAILED ON TEST #1
+treasure: 6 / original treasure: 2
+TEST 1 FAILED ON TEST #2
+testState handCount: 162 / originalState handCount: 113
+TEST 2 FAILED ON TEST #2
+treasure: 11 / original treasure: 3
+TEST 1 FAILED ON TEST #3
+testState handCount: 33 / originalState handCount: 18
+TEST 2 FAILED ON TEST #3
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #4
+testState handCount: 205 / originalState handCount: 162
+TEST 2 FAILED ON TEST #4
+treasure: 10 / original treasure: 3
+TEST 1 FAILED ON TEST #5
+testState handCount: 406 / originalState handCount: 391
+TEST 2 FAILED ON TEST #5
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #6
+testState handCount: 374 / originalState handCount: 334
+TEST 2 FAILED ON TEST #6
+treasure: 9 / original treasure: 2
+TEST 1 FAILED ON TEST #7
+testState handCount: 154 / originalState handCount: 137
+TEST 1 FAILED ON TEST #8
+testState handCount: 421 / originalState handCount: 336
+TEST 2 FAILED ON TEST #8
+treasure: 14 / original treasure: 3
+TEST 1 FAILED ON TEST #9
+testState handCount: 270 / originalState handCount: 248
+TEST 2 FAILED ON TEST #9
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #10
+testState handCount: 361 / originalState handCount: 332
+TEST 2 FAILED ON TEST #10
+treasure: 6 / original treasure: 2
+TEST 1 FAILED ON TEST #11
+testState handCount: 464 / originalState handCount: 453
+TEST 2 FAILED ON TEST #11
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #12
+testState handCount: 316 / originalState handCount: 295
+TEST 2 FAILED ON TEST #12
+treasure: 8 / original treasure: 4
+TEST 1 FAILED ON TEST #13
+testState handCount: 437 / originalState handCount: 410
+TEST 2 FAILED ON TEST #13
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #14
+testState handCount: 244 / originalState handCount: 196
+TEST 2 FAILED ON TEST #14
+treasure: 11 / original treasure: 2
+TEST 1 FAILED ON TEST #15
+testState handCount: 307 / originalState handCount: 279
+TEST 2 FAILED ON TEST #15
+treasure: 8 / original treasure: 3
+TEST 1 FAILED ON TEST #16
+testState handCount: 503 / originalState handCount: 492
+TEST 2 FAILED ON TEST #16
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #17
+testState handCount: 423 / originalState handCount: 402
+TEST 2 FAILED ON TEST #17
+treasure: 9 / original treasure: 4
+TEST 1 FAILED ON TEST #18
+testState handCount: 320 / originalState handCount: 296
+TEST 2 FAILED ON TEST #18
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #19
+testState handCount: 93 / originalState handCount: 75
+TEST 2 FAILED ON TEST #19
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #20
+testState handCount: 272 / originalState handCount: 233
+TEST 2 FAILED ON TEST #20
+treasure: 8 / original treasure: 2
+TEST 1 FAILED ON TEST #21
+testState handCount: 141 / originalState handCount: 123
+TEST 2 FAILED ON TEST #21
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #22
+testState handCount: 139 / originalState handCount: 124
+TEST 2 FAILED ON TEST #22
+treasure: 9 / original treasure: 3
+TEST 1 FAILED ON TEST #23
+testState handCount: 344 / originalState handCount: 330
+TEST 2 FAILED ON TEST #23
+treasure: 8 / original treasure: 2
+TEST 1 FAILED ON TEST #24
+testState handCount: 253 / originalState handCount: 239
+TEST 2 FAILED ON TEST #24
+treasure: 6 / original treasure: 2
+TEST 1 FAILED ON TEST #25
+testState handCount: 217 / originalState handCount: 174
+TEST 2 FAILED ON TEST #25
+treasure: 9 / original treasure: 4
+TEST 1 FAILED ON TEST #26
+testState handCount: 112 / originalState handCount: 45
+TEST 2 FAILED ON TEST #26
+treasure: 10 / original treasure: 3
+TEST 1 FAILED ON TEST #27
+testState handCount: 110 / originalState handCount: 64
+TEST 2 FAILED ON TEST #27
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #28
+testState handCount: 161 / originalState handCount: 131
+TEST 2 FAILED ON TEST #28
+treasure: 5 / original treasure: 2
+TEST 1 FAILED ON TEST #29
+testState handCount: 404 / originalState handCount: 344
+TEST 2 FAILED ON TEST #29
+treasure: 14 / original treasure: 3
+TEST 1 FAILED ON TEST #30
+testState handCount: 245 / originalState handCount: 211
+TEST 2 FAILED ON TEST #30
+treasure: 8 / original treasure: 3
+TEST 1 FAILED ON TEST #31
+testState handCount: 421 / originalState handCount: 406
+TEST 1 FAILED ON TEST #32
+testState handCount: 379 / originalState handCount: 365
+TEST 2 FAILED ON TEST #32
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #33
+testState handCount: 349 / originalState handCount: 326
+TEST 2 FAILED ON TEST #33
+treasure: 7 / original treasure: 4
+TEST 1 FAILED ON TEST #34
+testState handCount: 285 / originalState handCount: 195
+TEST 2 FAILED ON TEST #34
+treasure: 17 / original treasure: 2
+TEST 1 FAILED ON TEST #35
+testState handCount: 285 / originalState handCount: 242
+TEST 2 FAILED ON TEST #35
+treasure: 9 / original treasure: 3
+TEST 1 FAILED ON TEST #36
+testState handCount: 106 / originalState handCount: 80
+TEST 2 FAILED ON TEST #36
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #37
+testState handCount: 164 / originalState handCount: 114
+TEST 2 FAILED ON TEST #37
+treasure: 10 / original treasure: 3
+TEST 1 FAILED ON TEST #38
+testState handCount: 110 / originalState handCount: 63
+TEST 2 FAILED ON TEST #38
+treasure: 10 / original treasure: 3
+TEST 1 FAILED ON TEST #39
+testState handCount: 95 / originalState handCount: 54
+TEST 2 FAILED ON TEST #39
+treasure: 11 / original treasure: 4
+TEST 1 FAILED ON TEST #40
+testState handCount: 128 / originalState handCount: 116
+TEST 2 FAILED ON TEST #40
+treasure: 6 / original treasure: 2
+TEST 1 FAILED ON TEST #41
+testState handCount: 456 / originalState handCount: 444
+TEST 2 FAILED ON TEST #41
+treasure: 5 / original treasure: 2
+TEST 1 FAILED ON TEST #42
+testState handCount: 299 / originalState handCount: 294
+TEST 1 FAILED ON TEST #43
+testState handCount: 295 / originalState handCount: 277
+TEST 2 FAILED ON TEST #43
+treasure: 9 / original treasure: 3
+TEST 1 FAILED ON TEST #44
+testState handCount: 484 / originalState handCount: 456
+TEST 2 FAILED ON TEST #44
+treasure: 12 / original treasure: 3
+TEST 1 FAILED ON TEST #45
+testState handCount: 315 / originalState handCount: 279
+TEST 2 FAILED ON TEST #45
+treasure: 13 / original treasure: 3
+TEST 1 FAILED ON TEST #46
+testState handCount: 311 / originalState handCount: 303
+TEST 2 FAILED ON TEST #46
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #47
+testState handCount: 320 / originalState handCount: 312
+TEST 1 FAILED ON TEST #48
+testState handCount: 381 / originalState handCount: 368
+TEST 1 FAILED ON TEST #49
+testState handCount: 341 / originalState handCount: 310
+TEST 2 FAILED ON TEST #49
+treasure: 9 / original treasure: 4
+TEST 1 FAILED ON TEST #50
+testState handCount: 82 / originalState handCount: 65
+TEST 2 FAILED ON TEST #50
+treasure: 6 / original treasure: 2
+TEST 1 FAILED ON TEST #51
+testState handCount: 70 / originalState handCount: 33
+TEST 2 FAILED ON TEST #51
+treasure: 9 / original treasure: 3
+TEST 1 FAILED ON TEST #52
+testState handCount: 82 / originalState handCount: 60
+TEST 2 FAILED ON TEST #52
+treasure: 9 / original treasure: 2
+TEST 1 FAILED ON TEST #53
+testState handCount: 135 / originalState handCount: 119
+TEST 1 FAILED ON TEST #54
+testState handCount: 414 / originalState handCount: 394
+TEST 2 FAILED ON TEST #54
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #55
+testState handCount: 352 / originalState handCount: 324
+TEST 2 FAILED ON TEST #55
+treasure: 9 / original treasure: 4
+TEST 1 FAILED ON TEST #56
+testState handCount: 285 / originalState handCount: 265
+TEST 2 FAILED ON TEST #56
+treasure: 10 / original treasure: 3
+TEST 1 FAILED ON TEST #57
+testState handCount: 442 / originalState handCount: 428
+TEST 2 FAILED ON TEST #57
+treasure: 6 / original treasure: 2
+TEST 1 FAILED ON TEST #58
+testState handCount: 400 / originalState handCount: 349
+TEST 2 FAILED ON TEST #58
+treasure: 9 / original treasure: 3
+TEST 1 FAILED ON TEST #59
+testState handCount: 192 / originalState handCount: 163
+TEST 2 FAILED ON TEST #59
+treasure: 6 / original treasure: 2
+TEST 1 FAILED ON TEST #60
+testState handCount: 439 / originalState handCount: 399
+TEST 2 FAILED ON TEST #60
+treasure: 10 / original treasure: 3
+TEST 1 FAILED ON TEST #61
+testState handCount: 217 / originalState handCount: 136
+TEST 2 FAILED ON TEST #61
+treasure: 10 / original treasure: 3
+TEST 1 FAILED ON TEST #62
+testState handCount: 153 / originalState handCount: 144
+TEST 1 FAILED ON TEST #63
+testState handCount: 407 / originalState handCount: 401
+TEST 1 FAILED ON TEST #64
+testState handCount: 175 / originalState handCount: 126
+TEST 2 FAILED ON TEST #64
+treasure: 12 / original treasure: 2
+TEST 1 FAILED ON TEST #65
+testState handCount: 127 / originalState handCount: 109
+TEST 2 FAILED ON TEST #65
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #66
+testState handCount: 456 / originalState handCount: 451
+TEST 1 FAILED ON TEST #67
+testState handCount: 209 / originalState handCount: 183
+TEST 2 FAILED ON TEST #67
+treasure: 7 / original treasure: 4
+TEST 1 FAILED ON TEST #68
+testState handCount: 36 / originalState handCount: 19
+TEST 1 FAILED ON TEST #69
+testState handCount: 362 / originalState handCount: 347
+TEST 2 FAILED ON TEST #69
+treasure: 9 / original treasure: 3
+TEST 1 FAILED ON TEST #70
+testState handCount: 288 / originalState handCount: 230
+TEST 2 FAILED ON TEST #70
+treasure: 13 / original treasure: 2
+TEST 1 FAILED ON TEST #71
+testState handCount: 121 / originalState handCount: 102
+TEST 2 FAILED ON TEST #71
+treasure: 5 / original treasure: 2
+TEST 1 FAILED ON TEST #72
+testState handCount: 69 / originalState handCount: 55
+TEST 2 FAILED ON TEST #72
+treasure: 6 / original treasure: 3
+TEST 1 FAILED ON TEST #73
+testState handCount: 388 / originalState handCount: 358
+TEST 2 FAILED ON TEST #73
+treasure: 6 / original treasure: 1
+TEST 1 FAILED ON TEST #74
+testState handCount: 507 / originalState handCount: 494
+TEST 2 FAILED ON TEST #74
+treasure: 8 / original treasure: 3
+TEST 1 FAILED ON TEST #75
+testState handCount: 267 / originalState handCount: 242
+TEST 2 FAILED ON TEST #75
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #76
+testState handCount: 55 / originalState handCount: 42
+TEST 2 FAILED ON TEST #76
+treasure: 7 / original treasure: 4
+TEST 1 FAILED ON TEST #77
+testState handCount: 366 / originalState handCount: 341
+TEST 2 FAILED ON TEST #77
+treasure: 10 / original treasure: 2
+TEST 1 FAILED ON TEST #78
+testState handCount: 356 / originalState handCount: 337
+TEST 2 FAILED ON TEST #78
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #79
+testState handCount: 78 / originalState handCount: 47
+TEST 2 FAILED ON TEST #79
+treasure: 10 / original treasure: 4
+TEST 1 FAILED ON TEST #80
+testState handCount: 261 / originalState handCount: 241
+TEST 2 FAILED ON TEST #80
+treasure: 10 / original treasure: 3
+TEST 1 FAILED ON TEST #81
+testState handCount: 110 / originalState handCount: 91
+TEST 1 FAILED ON TEST #82
+testState handCount: 107 / originalState handCount: 63
+TEST 2 FAILED ON TEST #82
+treasure: 8 / original treasure: 3
+TEST 1 FAILED ON TEST #83
+testState handCount: 348 / originalState handCount: 310
+TEST 2 FAILED ON TEST #83
+treasure: 8 / original treasure: 4
+TEST 1 FAILED ON TEST #84
+testState handCount: 161 / originalState handCount: 133
+TEST 2 FAILED ON TEST #84
+treasure: 9 / original treasure: 2
+TEST 1 FAILED ON TEST #85
+testState handCount: 176 / originalState handCount: 142
+TEST 2 FAILED ON TEST #85
+treasure: 9 / original treasure: 3
+TEST 1 FAILED ON TEST #86
+testState handCount: 161 / originalState handCount: 137
+TEST 2 FAILED ON TEST #86
+treasure: 8 / original treasure: 3
+TEST 1 FAILED ON TEST #87
+testState handCount: 257 / originalState handCount: 242
+TEST 2 FAILED ON TEST #87
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #88
+testState handCount: 55 / originalState handCount: 48
+TEST 1 FAILED ON TEST #89
+testState handCount: 276 / originalState handCount: 257
+TEST 2 FAILED ON TEST #89
+treasure: 7 / original treasure: 4
+TEST 1 FAILED ON TEST #90
+testState handCount: 417 / originalState handCount: 390
+TEST 2 FAILED ON TEST #90
+treasure: 6 / original treasure: 2
+TEST 1 FAILED ON TEST #91
+testState handCount: 409 / originalState handCount: 385
+TEST 2 FAILED ON TEST #91
+treasure: 9 / original treasure: 3
+TEST 1 FAILED ON TEST #92
+testState handCount: 366 / originalState handCount: 324
+TEST 2 FAILED ON TEST #92
+treasure: 12 / original treasure: 3
+TEST 1 FAILED ON TEST #93
+testState handCount: 222 / originalState handCount: 188
+TEST 2 FAILED ON TEST #93
+treasure: 6 / original treasure: 1
+TEST 1 FAILED ON TEST #94
+testState handCount: 202 / originalState handCount: 184
+TEST 2 FAILED ON TEST #94
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #95
+testState handCount: 201 / originalState handCount: 182
+TEST 2 FAILED ON TEST #95
+treasure: 5 / original treasure: 2
+TEST 1 FAILED ON TEST #96
+testState handCount: 218 / originalState handCount: 151
+TEST 2 FAILED ON TEST #96
+treasure: 16 / original treasure: 4
+TEST 1 FAILED ON TEST #97
+testState handCount: 87 / originalState handCount: 59
+TEST 2 FAILED ON TEST #97
+treasure: 7 / original treasure: 2
+TEST 1 FAILED ON TEST #98
+testState handCount: 233 / originalState handCount: 221
+TEST 2 FAILED ON TEST #98
+treasure: 7 / original treasure: 3
+TEST 1 FAILED ON TEST #99
+testState handCount: 207 / originalState handCount: 190
+TEST 2 FAILED ON TEST #99
+treasure: 6 / original treasure: 3
+
+Adventurer random tests complete....
+
+ADVENTURER RANDOM TEST RESULTS
+---------------
+TEST 1 PASSES: 0
+TEST 1 FAILS: 100
+---------------
+TEST 2 PASSES: 12
+TEST 2 FAILS: 88
+---------------
+TEST 3 PASSES: 100
+TEST 3 FAILS: 0
+
+randomtestadventurer stats
+Lines executed:100.00% of 19
+Branches executed:100.00% of 12
+Taken at least once:91.67% of 12
+No calls
