@@ -60,6 +60,6 @@ STEPS TO REPRODUCE:
 
 EXPECTED RESULTS: The current player's hand should contain 2 more cards (both treasure cards) after Adventurer is played
 
-ACTUAL RESULTS: The current player's hand contains much more than 2 extra cards after Adventurer is played, thus indicating that a bug in Adventurer is incorrectly discarding cards that aren't treasure cards
+ACTUAL RESULTS: The current player's hand contains much more than 2 extra cards after Adventurer is played, thus indicating that a bug in Adventurer is failing to discard all cards that aren't treasure cards
 
 ATTACHMENTS: See randomtestadventurer.c and randomtestadventurer.out (generated from running 'make runRandomTests' -> makefile has been modified to only include Adventurer gcov stats)
